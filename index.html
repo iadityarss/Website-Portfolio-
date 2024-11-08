@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +22,10 @@
             overflow-x: hidden;
         }
         h1, h2, h3 {
-            color: #ff4d4d;
+            color: #001f3f;
         }
         a {
-            color: #ff4d4d;
+            color: #001f3f;
             text-decoration: none;
         }
 
@@ -34,15 +33,17 @@
         header {
             width: 100%;
             padding: 20px;
-            background: linear-gradient(90deg, #6a0dad, #ff4d4d);
+            background: linear-gradient(90deg, #6a0dad, #001f3f);
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
         header h1 {
             font-size: 2rem;
             font-weight: 700;
+            font-style: italic;
+            margin-left: 20px;
         }
         header p {
             font-weight: 300;
@@ -68,7 +69,7 @@
         }
         h2 {
             font-size: 1.8rem;
-            border-bottom: 2px solid #ff4d4d;
+            border-bottom: 2px solid #001f3f;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -96,125 +97,4 @@
             margin-bottom: 10px;
         }
 
-        /* Contact Section */
-        #contact {
-            text-align: center;
-        }
-        .contact a {
-            font-weight: 500;
-            border: 2px solid #ff4d4d;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: background 0.3s ease;
-        }
-        .contact a:hover {
-            background: #ff4d4d;
-            color: #0d0d0d;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            padding: 15px;
-            text-align: center;
-            width: 100%;
-        }
-
-        /* Keyframes */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header section -->
-    <header>
-        <h1>Aditya Rana</h1>
-        <p>Aspiring Robotics Engineer</p>
-    </header>
-
-    <!-- About section with dynamic content loading -->
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I’m Aditya Rana, a 17-year-old Grade 12 student from the CBSE Board, passionate about robotics and engineering. My hands-on projects have included an ultrasonic radar system and an Arduino-based mini car assistance system, which honed my skills in electronics and programming. Recently, I completed the Aerial Robotics Specialization from the University of Pennsylvania on Coursera, furthering my knowledge in autonomous systems and drone dynamics.</p>
-        </section>
-
-        <!-- Interactive Projects section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Ultrasonic Radar System</h3>
-                    <p>Designed an ultrasonic radar system using Arduino and ultrasonic sensors for distance detection and obstacle mapping.</p>
-                </div>
-                <div class="project">
-                    <h3>Arduino Mini Car Assistance</h3>
-                    <p>Built a mini car assistance system that uses sensors to detect objects and avoid obstacles, enhancing the understanding of sensor integration and control logic.</p>
-                </div>
-                <div class="project">
-                    <h3>Drone Simulation</h3>
-                    <p>Simulated drone flight paths in MATLAB, gaining experience in flight dynamics and autonomous navigation control.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Education section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education">
-                <div class="course">
-                    <h3>Aerial Robotics Specialization</h3>
-                    <p><strong>Institution:</strong> University of Pennsylvania (Coursera)</p>
-                    <p>Studied drone kinematics, dynamics, and control in aerial robotics, with a focus on simulation and path planning.</p>
-                </div>
-                <div class="course">
-                    <h3>High School Diploma - Grade 12</h3>
-                    <p><strong>Board:</strong> CBSE</p>
-                    <p>Advanced courses in physics, mathematics, and computer science, forming a strong foundation for a future in robotics and engineering.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Contact section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Connect with me for project collaborations or to learn more about my work!</p>
-            <a href="mailto:adityarana@example.com">adityarana@example.com</a>
-        </section>
-    </main>
-
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2024 Aditya Rana | Aspiring Robotics Engineer</p>
-    </footer>
-
-    <!-- JavaScript for interactive effects -->
-    <script>
-        // Dynamic animation on scroll
-        window.addEventListener('scroll', () => {
-            document.querySelectorAll('section').forEach((section) => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight && rect.bottom > 0) {
-                    section.style.opacity = 1;
-                    section.style.transform = 'translateY(0)';
-                } else {
-                    section.style.opacity = 0.5;
-                    section.style.transform = 'translateY(20px)';
-                }
-            });
-        });
-
-        // Scroll to top button
-        const scrollToTop = document.createElement('button');
-        scrollToTop.textContent = '↑';
-        scrollToTop.style = 'position:fixed;bottom:20px;right:20px;padding:10px;border-radius:50%;background:#ff4d4d;color:#0d0d0d;border:none;cursor:pointer;font-size:20px;';
-        document.body.appendChild(scrollToTop);
-        scrollToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-    </script>
-
-</body>
-</html>
-```
+        /* C
