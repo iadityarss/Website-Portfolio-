@@ -3,79 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Rana - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Portfolio | Aspiring Robotics Engineer</title>
+    <style>
+        /* Basic styling for layout and design */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .projects, .education {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project, .course {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project h3, .course h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header section -->
     <header>
-        <nav>
-            <h1 class="logo">Aditya Rana</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h2>Hello, I'm <span>Aditya Rana</span></h2>
-            <p>Aspiring Robotics Engineer & Full-Stack Developer</p>
-            <button onclick="scrollToSection('projects')">View My Work</button>
-        </div>
+        <h1>John Doe - Aspiring Robotics Engineer</h1>
+        <p>Grade 12 Student | Robotics Enthusiast | Aerial Robotics Specialization</p>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm passionate about robotics engineering, automation, and technology. Currently focused on honing my programming skills and building innovative projects in automation and robotics.</p>
-    </section>
+    <!-- About section -->
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m a 17-year-old student currently in Grade 12 with a passion for robotics and engineering. My journey began with hands-on robotics projects, and I am excited to pursue a career in robotics engineering. Recently, I completed the Aerial Robotics Specialization from the University of Pennsylvania on Coursera, which deepened my interest in drones and autonomous systems.</p>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-cards">
-            <div class="card">
-                <h3>Ultrasonic Radar</h3>
-                <p>A small radar project using Arduino for detecting objects.</p>
-                <button onclick="openModal('Ultrasonic Radar', 'Details about the Ultrasonic Radar project')">Learn More</button>
+        <!-- Projects section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Obstacle-Avoiding Robot</h3>
+                    <p>Developed a small robot capable of detecting and avoiding obstacles using ultrasonic sensors and Arduino. This project taught me basic programming and hardware integration.</p>
+                </div>
+                <div class="project">
+                    <h3>Line-Following Robot</h3>
+                    <p>Designed and built a line-following robot that tracks a path using infrared sensors. This project improved my understanding of control systems in robotics.</p>
+                </div>
+                <div class="project">
+                    <h3>Drone Simulation</h3>
+                    <p>Simulated a drone flight path using MATLAB, exploring control principles in aerial robotics. This experience gave me insight into flight dynamics and autonomous navigation.</p>
+                </div>
             </div>
-            <!-- Additional Projects Here -->
-        </div>
-    </section>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">Python</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Arduino</div>
-            <div class="skill">Robotics</div>
-            <!-- Add More Skills Here -->
-        </div>
-    </section>
+        <!-- Education section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <div class="course">
+                    <h3>Aerial Robotics Specialization</h3>
+                    <p><strong>Institution:</strong> University of Pennsylvania (Coursera)</p>
+                    <p>Covered principles of drone flight, including kinematics, dynamics, and control, with practical exercises in aerial robotics simulation and programming.</p>
+                </div>
+                <div class="course">
+                    <h3>High School Diploma - Grade 12</h3>
+                    <p><strong>Institution:</strong> Local High School</p>
+                    <p>Studying advanced mathematics, physics, and programming, building a foundation for a future in engineering and robotics.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <p>Feel free to reach out for collaborations, or if you'd like to know more about my projects!</p>
+                <p><a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 Aditya Rana. All rights reserved.</p>
+        <p>&copy; 2024 John Doe | Aspiring Robotics Engineer</p>
     </footer>
 
-    <!-- Modal for project details -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3 id="modal-title">Project Title</h3>
-            <p id="modal-details">Project details here...</p>
-        </div>
-    </div>
 </body>
 </html>
-
