@@ -4,58 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Aspiring Robotics Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic styling for layout and design */
-        body {
-            font-family: Arial, sans-serif;
+        /* General Styling */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
         }
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        h1, h2, h3 {
+            color: #ffcb2b;
+        }
+        a {
+            color: #ffcb2b;
+            text-decoration: none;
+        }
+
+        /* Header Section */
         header {
-            background-color: #333;
-            color: #fff;
+            width: 100%;
             padding: 20px;
-            text-align: center;
+            background: linear-gradient(90deg, #ff7f50, #ffcb2b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
         }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        header p {
+            font-weight: 300;
+        }
+
+        /* Main Section Styling */
         main {
+            width: 90%;
+            max-width: 1200px;
             padding: 20px;
+            animation: fadeIn 1.5s ease;
         }
         section {
             margin-bottom: 40px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
         }
-        h1, h2, h3 {
-            color: #333;
+        section:hover {
+            transform: translateY(-5px);
         }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #ffcb2b;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+
+        /* Project and Education Sections */
         .projects, .education {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
         .project, .course {
-            background: #fff;
-            border-radius: 5px;
             padding: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background: #292929;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .project:hover, .course:hover {
+            transform: scale(1.05);
         }
         .project h3, .course h3 {
-            margin-top: 0;
-            font-size: 1.2em;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
-        .contact {
+
+        /* Contact Section */
+        #contact {
             text-align: center;
         }
         .contact a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            border: 2px solid #ffcb2b;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
         }
+        .contact a:hover {
+            background: #ffcb2b;
+            color: #121212;
+        }
+
+        /* Footer */
         footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
+            background: #1e1e1e;
+            padding: 15px;
             text-align: center;
+            width: 100%;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -63,60 +131,58 @@
 
     <!-- Header section -->
     <header>
-        <h1>John Doe - Aspiring Robotics Engineer</h1>
-        <p>Grade 12 Student | Robotics Enthusiast | Aerial Robotics Specialization</p>
+        <h1>John Doe</h1>
+        <p>Aspiring Robotics Engineer</p>
     </header>
 
-    <!-- About section -->
+    <!-- About section with dynamic content loading -->
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I’m a 17-year-old student currently in Grade 12 with a passion for robotics and engineering. My journey began with hands-on robotics projects, and I am excited to pursue a career in robotics engineering. Recently, I completed the Aerial Robotics Specialization from the University of Pennsylvania on Coursera, which deepened my interest in drones and autonomous systems.</p>
+            <p>Hello! I’m a 17-year-old Grade 12 student passionate about robotics and engineering. I have built hands-on projects like obstacle-avoiding robots and line-following bots, and I recently completed the Aerial Robotics Specialization from the University of Pennsylvania, deepening my knowledge in autonomous systems.</p>
         </section>
 
-        <!-- Projects section -->
+        <!-- Interactive Projects section -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects">
                 <div class="project">
                     <h3>Obstacle-Avoiding Robot</h3>
-                    <p>Developed a small robot capable of detecting and avoiding obstacles using ultrasonic sensors and Arduino. This project taught me basic programming and hardware integration.</p>
+                    <p>Built a robot that uses ultrasonic sensors to detect and avoid obstacles, powered by Arduino.</p>
                 </div>
                 <div class="project">
                     <h3>Line-Following Robot</h3>
-                    <p>Designed and built a line-following robot that tracks a path using infrared sensors. This project improved my understanding of control systems in robotics.</p>
+                    <p>Designed a robot to follow a path using infrared sensors, applying basic control algorithms.</p>
                 </div>
                 <div class="project">
                     <h3>Drone Simulation</h3>
-                    <p>Simulated a drone flight path using MATLAB, exploring control principles in aerial robotics. This experience gave me insight into flight dynamics and autonomous navigation.</p>
+                    <p>Simulated drone flight in MATLAB, exploring flight dynamics and path planning for drones.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Education section -->
+        <!-- Interactive Education section -->
         <section id="education">
             <h2>Education</h2>
             <div class="education">
                 <div class="course">
                     <h3>Aerial Robotics Specialization</h3>
                     <p><strong>Institution:</strong> University of Pennsylvania (Coursera)</p>
-                    <p>Covered principles of drone flight, including kinematics, dynamics, and control, with practical exercises in aerial robotics simulation and programming.</p>
+                    <p>Covered flight dynamics, control, and simulation, learning fundamental principles of aerial robotics.</p>
                 </div>
                 <div class="course">
                     <h3>High School Diploma - Grade 12</h3>
                     <p><strong>Institution:</strong> Local High School</p>
-                    <p>Studying advanced mathematics, physics, and programming, building a foundation for a future in engineering and robotics.</p>
+                    <p>Advanced studies in mathematics, physics, and programming to prepare for a future in engineering.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact section -->
+        <!-- Interactive Contact section -->
         <section id="contact">
             <h2>Contact</h2>
-            <div class="contact">
-                <p>Feel free to reach out for collaborations, or if you'd like to know more about my projects!</p>
-                <p><a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
-            </div>
+            <p>Connect with me for project collaborations or to learn more about my work!</p>
+            <a href="mailto:johndoe@example.com">johndoe@example.com</a>
         </section>
     </main>
 
@@ -124,6 +190,30 @@
     <footer>
         <p>&copy; 2024 John Doe | Aspiring Robotics Engineer</p>
     </footer>
+
+    <!-- JavaScript for interactive effects -->
+    <script>
+        // Dynamic animation on scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('section').forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                } else {
+                    section.style.opacity = 0.5;
+                    section.style.transform = 'translateY(20px)';
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollToTop = document.createElement('button');
+        scrollToTop.textContent = '↑';
+        scrollToTop.style = 'position:fixed;bottom:20px;right:20px;padding:10px;border-radius:50%;background:#ffcb2b;color:#121212;border:none;cursor:pointer;font-size:20px;';
+        document.body.appendChild(scrollToTop);
+        scrollToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    </script>
 
 </body>
 </html>
