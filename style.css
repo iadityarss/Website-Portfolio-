@@ -2,165 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    background: linear-gradient(135deg, #000000, #6a0dad);
+    color: #eaeaea;
+    padding: 20px;
+    animation: fadeIn 2s;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding: 20px;
-    background: #1e1e1e;
+    margin-bottom: 20px;
+    color: lavender;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    padding: 10px 0;
-}
-
-nav h1.logo {
-    font-size: 1.5em;
-    color: #bb86fc;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #bb86fc;
-}
-
-.hero h2 {
+header h1 {
     font-size: 2.5em;
+    background: linear-gradient(to right, #6a0dad, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textGlow 3s infinite alternate;
 }
 
-.hero p {
+header p {
     font-size: 1.2em;
-    color: #757575;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #bb86fc;
-    color: #1e1e1e;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #985fe3;
 }
 
 section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2em;
-    color: #bb86fc;
-    margin-bottom: 20px;
-}
-
-.project-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: #1e1e1e;
+    margin-bottom: 30px;
     padding: 20px;
-    border-radius: 8px;
-    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     transition: transform 0.3s;
 }
 
-.card:hover {
+section:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.5);
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: lavender;
+    border-bottom: 2px solid lavender;
+    padding-bottom: 5px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.skill {
-    background-color: #292929;
-    padding: 10px 15px;
-    border-radius: 5px;
+p, ul, li {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-#contact form input,
-#contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background: #292929;
-    border: none;
-    color: #e0e0e0;
+ul {
+    list-style: square inside;
 }
 
-footer {
-    padding: 20px;
-    background: #1e1e1e;
-    color: #757575;
-    text-align: center;
+.certificate-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid lavender;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(106, 13, 173, 0.7);
+    transition: transform 0.3s;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    align-items: center;
-    justify-content: center;
+.certificate-image:hover {
+    transform: rotate(3deg) scale(1.02);
 }
 
-.modal-content {
-    background-color: #292929;
-    padding: 20px;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
+#contact p {
+    margin-bottom: 10px;
 }
 
-.close {
-    color: #bb86fc;
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
+@keyframes textGlow {
+    0% { text-shadow: 0 0 10px #6a0dad, 0 0 20px #6a0dad; }
+    100% { text-shadow: 0 0 20px #6a0dad, 0 0 40px #000000; }
+}
