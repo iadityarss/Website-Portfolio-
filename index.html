@@ -3,181 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Rana | Aspiring Robotics Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Raleway:wght@800&display=swap" rel="stylesheet">
-    <style>
-        /* General Styling */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background-color: #0d0d0d;
-            color: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
-        }
-        h1, h2, h3 {
-            color: #f5f5f5; /* Solid color for readability */
-            background: none;
-        }
-        a {
-            color: #6a0dad; /* Lavender color for links */
-            text-decoration: none;
-        }
-
-        /* Header Section */
-        header {
-            width: 100%;
-            padding: 20px;
-            background: #1a1a1a;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-        header h1 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: #f5f5f5;
-        }
-        header p {
-            font-weight: 300;
-        }
-
-        /* Main Section Styling */
-        main {
-            width: 90%;
-            max-width: 1200px;
-            padding: 20px;
-            animation: fadeIn 1.5s ease;
-        }
-        section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
-            border-radius: 10px;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
-        }
-        section:hover {
-            transform: translateY(-5px);
-        }
-        h2 {
-            font-size: 1.8rem;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            color: #f5f5f5; /* White color for readability */
-        }
-        p {
-            line-height: 1.6;
-        }
-
-        /* Project and Education Sections */
-        .projects, .education {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .project, .course {
-            padding: 20px;
-            background: #3a3a3a;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .project:hover, .course:hover {
-            transform: scale(1.05);
-        }
-        .project h3, .course h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #f5f5f5; /* Solid white for readability */
-        }
-
-        /* Contact Section */
-        #contact {
-            text-align: center;
-        }
-        .contact a {
-            font-weight: 500;
-            border: 2px solid #6a0dad;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: background 0.3s ease;
-            color: #f5f5f5; /* White for better contrast */
-        }
-        .contact a:hover {
-            background: #6a0dad;
-            color: #0d0d0d;
-        }
-
-        /* Animation for Fade-In Effect */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
+    <title>Aditya Rana - Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
         <h1>Aditya Rana</h1>
-        <p>Aspiring Robotics Engineer</p>
+        <p>Aspiring Robotics Engineer | Full-Stack Developer</p>
     </header>
 
-    <!-- Main Content Section -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I’m Aditya Rana, a grade 12 student with a strong passion for robotics and engineering. My journey into robotics began with hands-on projects like creating an Ultrasonic Radar and an Arduino Mini Car Assistance System. I’ve also completed a specialization in Aerial Robotics from the University of Pennsylvania on Coursera, expanding my skills in this field.</p>
-        </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated student from Rose Public School with a passion for robotics and full-stack development. As a top-ranked student, I've consistently excelled in Physics, Chemistry, and Mathematics and have led various academic and extracurricular activities. With numerous accolades in MUNs, state-level sports, and academic olympiads, I aim to bring my skills to the next level by pursuing an advanced education in robotics engineering.
+        </p>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Ultrasonic Radar</h3>
-                    <p>A project using Arduino to detect obstacles through ultrasonic waves, a foundational step in automation and sensor technology.</p>
-                </div>
-                <div class="project">
-                    <h3>Arduino Mini Car Assistance System</h3>
-                    <p>Developed an assistance system for a mini car using Arduino, designed to enhance safety and maneuverability in small robotics applications.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Engineering (Honours) in Mechanical Engineering - Pursuing</li>
+            <li>Top of Class - Rose Public School</li>
+            <li>Consistent top scorer in Physics, Chemistry, and Math</li>
+        </ul>
+    </section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education">
-                <div class="course">
-                    <h3>Grade 12 – CBSE Board</h3>
-                    <p>Currently completing high school with a focus on Physics, Chemistry, and Mathematics under the CBSE curriculum.</p>
-                </div>
-                <div class="course">
-                    <h3>Aerial Robotics Specialization</h3>
-                    <p>Completed the Aerial Robotics specialization from the University of Pennsylvania on Coursera, gaining advanced insights into aerial robotic systems.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Gold medalist in International Olympiads (2017-2021)</li>
+            <li>Two-time winner in annual sports meet; certified state-level cricket player</li>
+            <li>Ranked #1 in Robotics at Sci-Fi Expo and topped school quizzes</li>
+            <li>Outstanding Delegate and Best Position Paper awards at UNESCO MUN</li>
+        </ul>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out for collaboration, questions, or opportunities!</p>
-            <div class="contact">
-                <a href="mailto:aditya.rana@example.com">Email Me</a>
-            </div>
-        </section>
-    </main>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Python, C++, JavaScript</li>
+            <li>Robotics: Arduino, Aerial Robotics, Tiny ML (Deploying Tiny ML by Harvard)</li>
+            <li>Web Development: HTML, CSS, Full-Stack Development</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Ultrasonic Radar System using Arduino</li>
+            <li>Founder of school robotics club; organized workshops on robot assembly and programming</li>
+            <li>Aerial Robotics specialization project (University of Pennsylvania)</li>
+        </ul>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <img src="course.jpg" alt="Coursera Certificate" class="certificate-image">
+        <p>Course: Aerial Robotics Specialization (University of Pennsylvania on Coursera)</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: adityarana@example.com</p>
+        <p>Location: Nurpur, Himachal Pradesh, India</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
