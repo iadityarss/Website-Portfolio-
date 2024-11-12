@@ -1,107 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Rana's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Alex Smith</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Alex Smith</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum 
+                        quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo, 
+                        autem molestiae!
+                    </p>
 
-  <!-- Header Section -->
-  <header class="header">
-    <h1 class="name">Aditya Rana</h1>
-    <p class="tagline">Aspiring Robotics Engineer & High School Student</p>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>Hi, I'm Aditya Rana, a high school student from Himachal Pradesh, India, aspiring to be a robotics engineer. I have a strong interest in automation, programming, and assembling robots, and I'm constantly working on projects to advance my skills.</p>
-  </section>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Basic Robotics Engineering</li>
-      <li>Arduino Programming</li>
-      <li>Python Programming</li>
-      <li>Automation</li>
-    </ul>
-  </section>
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
 
-  <!-- Achievements Section -->
-  <section id="achievements" class="section">
-    <h2>Achievements</h2>
-    <ul class="achievements-list">
-      <li>Consecutive Gold Medalist in International Olympiads (IOS) from 2017-2021</li>
-      <li>Gold Medals in Discus Throw, Shot Put, and Inter-House Badminton Championship</li>
-      <li>State-Level Cricket Certification</li>
-      <li>Runner-up in Science and Math at DAV Senior Secondary School State-level Science Congress</li>
-      <li>Topper in Physics, Chemistry, Math, and Physical Education</li>
-      <li>Ranked #1 in Robotics at Sci-Fi Expo, Rose Public School</li>
-      <li>Winner in Himachal Pradesh Government District Youth Cultural Festival</li>
-    </ul>
-  </section>
-
-  <!-- Certificates Section -->
-  <section id="certificates" class="section">
-    <h2>Certificates</h2>
-    <div class="certificates-container">
-      <img src="IMG_5062.png" alt="Coursera Certificate" class="certificate-image">
-      <p>Certificate: Aerial Robotics Specialization - University of Pennsylvania (Coursera)</p>
-      <img src="iit_bombay_certificate.jpg" alt="IIT Bombay Python Course" class="certificate-image">
-      <p>Certificate: Basic Python - IIT Bombay</p>
-      <img src="harvard_arduino_certificate.jpg" alt="Harvard Arduino Course" class="certificate-image">
-      <p>Certificate: Arduino Course - Harvard edX</p>
-      <!-- Add more certificates as needed -->
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-    <ul class="experience-list">
-      <li>Founder of Robotics Club at Rose Public School</li>
-      <li>House Captain and Class Activity Head at Rose Public School</li>
-      <li>Delegate in multiple MUNs, including HAPSMUN, MYI Korea, IZELMUN, and UNESCO International MUN</li>
-      <li>Community Service Volunteer and Donor at Prerana Inspiration and RSS</li>
-      <li>Student Leader with roles in student government and outschool elections</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">Ultrasonic Radar for Arduino</div>
-      <div class="project-card">Basic Robotics Automation System</div>
-      <div class="project-card">AI-Based Inventory Tracking System (in progress)</div>
-      <!-- Add more projects as needed -->
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form id="contactForm" class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <script src="script.js"></script>
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
 </body>
 </html>
