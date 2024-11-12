@@ -1,97 +1,111 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-  background-color: #005b96;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.header-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 5px;
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
-.header-content p {
-  font-size: 1.2em;
-  margin-bottom: 15px;
+header nav ul li {
+    margin: 0 15px;
 }
 
-header nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-header nav a:hover {
-  color: #f8b400;
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
-  padding: 40px 20px;
-  margin: 20px 0;
-  max-width: 800px;
-  margin: auto;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 80px; /* To prevent content from hiding behind fixed header */
 }
 
-section h2 {
-  font-size: 2em;
-  color: #005b96;
-  margin-bottom: 15px;
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+.achievement-list, .certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#certificates-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
+.achievement, .certificate-list li {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.certificate {
-  border: 1px solid #ddd;
-  padding: 15px;
-  width: 200px;
-  text-align: center;
-  background-color: #fafafa;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.achievement h3, .certificate-list li {
+    font-size: 20px;
+    color: #333;
 }
 
-.certificate a {
-  display: block;
-  margin-top: 10px;
-  color: #005b96;
-  font-weight: bold;
-  text-decoration: none;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-.certificate a:hover {
-  color: #f8b400;
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .achievement-list, .certificate-list {
+        flex-direction: column;
+        align-items: center;
+    }
 }
