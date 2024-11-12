@@ -1,3 +1,4 @@
+/* Same base CSS as before with added styling for certificate images */
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +58,7 @@ section {
     justify-content: center;
 }
 
-.achievement, .certificate-list li {
+.achievement, .certificate {
     background-color: white;
     margin: 10px;
     padding: 20px;
@@ -67,9 +68,16 @@ section {
     text-align: left;
 }
 
-.achievement h3, .certificate-list li {
+.achievement h3, .certificate h3 {
     font-size: 20px;
     color: #333;
+}
+
+.certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
 }
 
 form input, form textarea {
