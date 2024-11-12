@@ -3,89 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Rana - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <title>Aditya Rana's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Home Section -->
-  <section id="home">
-    <div class="intro">
-      <h1>Hi, I'm Aditya Rana</h1>
-      <p>Aspiring Robotics Engineer & Full-Stack Developer</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
+  <!-- Header Section -->
+  <header class="header">
+    <h1 class="name">Aditya Rana</h1>
+    <p class="tagline">Aspiring Robotics Engineer & High School Student</p>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I'm a dedicated and passionate student aspiring to be a robotics engineer. I have a strong background in mechanical engineering and extensive experience in Model United Nations, sports, and leadership.</p>
+    <p>Hi, I'm Aditya Rana, a high school student from Himachal Pradesh, India, aspiring to be a robotics engineer. I have a strong interest in automation, programming, and assembling robots, and I'm constantly working on projects to advance my skills.</p>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <div class="skill-list">
-      <div class="skill" data-skill="Python"></div>
-      <div class="skill" data-skill="JavaScript"></div>
-      <div class="skill" data-skill="Robotics"></div>
-      <div class="skill" data-skill="Mechanical Engineering"></div>
-      <div class="skill" data-skill="Arduino"></div>
-      <div class="skill" data-skill="TinyML"></div>
+    <ul class="skills-list">
+      <li>Basic Robotics Engineering</li>
+      <li>Arduino Programming</li>
+      <li>Python Programming</li>
+      <li>Automation</li>
+    </ul>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <ul class="achievements-list">
+      <li>Consecutive Gold Medalist in International Olympiads (IOS) from 2017-2021</li>
+      <li>Gold Medals in Discus Throw, Shot Put, and Inter-House Badminton Championship</li>
+      <li>State-Level Cricket Certification</li>
+      <li>Runner-up in Science and Math at DAV Senior Secondary School State-level Science Congress</li>
+      <li>Topper in Physics, Chemistry, Math, and Physical Education</li>
+      <li>Ranked #1 in Robotics at Sci-Fi Expo, Rose Public School</li>
+      <li>Winner in Himachal Pradesh Government District Youth Cultural Festival</li>
+    </ul>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="section">
+    <h2>Certificates</h2>
+    <div class="certificates-container">
+      <img src="coursera_certificate_placeholder.jpg" alt="Coursera Certificate" class="certificate-image">
+      <p>Certificate: Aerial Robotics Specialization - University of Pennsylvania (Coursera)</p>
+      <img src="iit_bombay_certificate.jpg" alt="IIT Bombay Python Course" class="certificate-image">
+      <p>Certificate: Basic Python - IIT Bombay</p>
+      <img src="harvard_arduino_certificate.jpg" alt="Harvard Arduino Course" class="certificate-image">
+      <p>Certificate: Arduino Course - Harvard edX</p>
+      <!-- Add more certificates as needed -->
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>Currently studying Bachelor of Engineering (Honours) in Mechanical Engineering in New Zealand.</li>
-      <li>Gold medalist in various Olympiads and consistent academic topper.</li>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <ul class="experience-list">
+      <li>Founder of Robotics Club at Rose Public School</li>
+      <li>House Captain and Class Activity Head at Rose Public School</li>
+      <li>Delegate in multiple MUNs, including HAPSMUN, MYI Korea, IZELMUN, and UNESCO International MUN</li>
+      <li>Community Service Volunteer and Donor at Prerana Inspiration and RSS</li>
+      <li>Student Leader with roles in student government and outschool elections</li>
     </ul>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>Ultrasonic Radar for Arduino</h3>
-        <p>A small project on Arduino that showcases my practical skills in robotics automation.</p>
-      </div>
-      <div class="project">
-        <h3>FIRST Robotics Club</h3>
-        <p>Founded a robotics club, registered on FIRST, to encourage young engineers to dive into robotics and automation.</p>
-      </div>
+    <div class="projects-container">
+      <div class="project-card">Ultrasonic Radar for Arduino</div>
+      <div class="project-card">Basic Robotics Automation System</div>
+      <div class="project-card">AI-Based Inventory Tracking System (in progress)</div>
+      <!-- Add more projects as needed -->
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+    <form id="contactForm" class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Aditya Rana. All Rights Reserved.</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
