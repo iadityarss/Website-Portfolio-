@@ -1,77 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Rana's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aditya Rana | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="header-content">
-      <h1>Aditya Rana</h1>
-      <p>Full-stack Developer & Robotics Engineer</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm Aditya Rana, a dedicated and passionate robotics engineer with extensive experience in full-stack development and robotics automation. Over the years, I have developed expertise in Python programming, Arduino, and robotic systems, and have led numerous tech and robotics projects. My mission is to create innovative solutions in robotics to automate complex tasks and contribute to advancements in technology.</p>
-    <p>In addition to my technical pursuits, I am actively involved in Model United Nations and community service, showing my commitment to both professional excellence and social responsibility.</p>
-  </section>
+    <section id="home" class="section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Aditya Rana, a robotics engineer and full-stack developer passionate about robotics automation and programming.</p>
+    </section>
 
-  <!-- Achievements Section -->
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Gold medals in International Olympiads (IOS) from 2017 to 2021</li>
-      <li>Ranked #1 in school-level robotics competitions, including Sci-Fi Expo</li>
-      <li>State-level cricket certification and multiple awards in sports, including discus throw and badminton</li>
-      <li>Leadership positions, including House Captain and Head of Spoken English Department</li>
-      <li>Founder of the school robotics club, registered with FIRST</li>
-      <li>Consistent academic topper in Physics, Chemistry, and Mathematics</li>
-      <li>Participated in HAPSMUN, IZELMUN, MYI Korea, and won awards in International MUN</li>
-    </ul>
-  </section>
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <div class="achievement-list">
+            <div class="achievement">
+                <h3>Gold Medals in International Olympiads</h3>
+                <p>From 2017 to 2021, I won consecutive gold medals in the International Olympiad of Science.</p>
+            </div>
+            <div class="achievement">
+                <h3>State-level Cricket Certification</h3>
+                <p>Certified in cricket at the state level, showcasing leadership and teamwork skills.</p>
+            </div>
+            <div class="achievement">
+                <h3>Topper in Physics, Chemistry, and Math</h3>
+                <p>Consistently ranked first in Physics, Chemistry, and Math throughout my academic journey.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates" class="section">
-    <h2>Certificates</h2>
-    <div class="certificates-container">
-      <img src="IMG_5062.png" alt="Coursera Certificate" class="certificate-image">
-      <p>Certificate: Aerial Robotics Specialization - University of Pennsylvania (Coursera)</p>
-      <img src="iit_bombay_certificate.jpg" alt="IIT Bombay Python Course" class="certificate-image">
-      <p>Certificate: Basic Python - IIT Bombay</p>
-      <img src="harvard_arduino_certificate.jpg" alt="Harvard Arduino Course" class="certificate-image">
-      <p>Certificate: Arduino Course - Harvard edX</p>
-      <!-- Add more certificates as needed -->
-    </div>
-  </section>
+    <section id="certificates" class="section">
+        <h2>My Certificates</h2>
+        <ul class="certificate-list">
+            <li>NIIT Nguru Quiz Gold Medal</li>
+            <li>SKGKO Gold and Silver Medals (2016, 2017)</li>
+            <li>Basic Python Certification from IIT Bombay</li>
+            <li>Aerial Robotics Specialization from the University of Pennsylvania</li>
+        </ul>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>If you'd like to get in touch, feel free to <a href="mailto:aditya.rana@example.com">email me</a>.</p>
-    <p>Alternatively, connect with me on LinkedIn or GitHub for professional collaboration.</p>
-  </section>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="mailto:iadityarss@icloud.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Aditya Rana | Robotics Engineer & Full-stack Developer</p>
-  </footer>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-  <script src="script.js"></script>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aditya Rana</p>
+    </footer>
 </body>
 </html>
-
-  <footer>
-    <p>&copy;
-
