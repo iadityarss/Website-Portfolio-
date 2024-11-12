@@ -1,117 +1,32 @@
-/* ----- NAVIGATION BAR FUNCTION ----- */
-    function myMenuFunction(){
-      var menuBtn = document.getElementById("myNavMenu");
+// Array of certificate data
+const certificates = [
+  { name: "Python Basics by IIT Bombay", url: "https://example.com/cert1" },
+  { name: "Aerial Robotics by University of Pennsylvania", url: "https://example.com/cert2" },
+  { name: "Arduino Fundamentals by Harvard", url: "https://example.com/cert3" },
+  { name: "Deploying Tiny ML by Harvard", url: "https://example.com/cert4" }
+];
 
-      if(menuBtn.className === "nav-menu"){
-        menuBtn.className += " responsive";
-      } else {
-        menuBtn.className = "nav-menu";
-      }
-    }
+// Select the container for certificates
+const certificatesContainer = document.getElementById("certificates-container");
 
-/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
-    window.onscroll = function() {headerShadow()};
+// Function to display certificates dynamically
+function displayCertificates(certificates) {
+  certificates.forEach(cert => {
+    // Create a div for each certificate
+    const certElement = document.createElement("div");
+    certElement.classList.add("certificate");
 
-    function headerShadow() {
-      const navHeader =document.getElementById("header");
+    // Insert certificate content
+    certElement.innerHTML = `
+      <h3>${cert.name}</h3>
+      <a href="${cert.url}" target="_blank">View Certificate</a>
+    `;
 
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
+    // Append to the certificates container
+    certificatesContainer.appendChild(certElement);
+  });
+}
 
-        navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
-        navHeader.style.height = "70px";
-        navHeader.style.lineHeight = "70px";
+// Call the function to populate certificates
+displayCertificates(certificates);
 
-      } else {
-
-        navHeader.style.boxShadow = "none";
-        navHeader.style.height = "90px";
-        navHeader.style.lineHeight = "90px";
-
-      }
-    }
-
-
-/* ----- TYPING EFFECT ----- */
-   var typingEffect = new Typed(".typedText",{
-      strings : ["Designer","Youtuber","Developer"],
-      loop : true,
-      typeSpeed : 100, 
-      backSpeed : 80,
-      backDelay : 2000
-   })
-
-
-/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
-   const sr = ScrollReveal({
-          origin: 'top',
-          distance: '80px',
-          duration: 2000,
-          reset: true     
-   })
-
-  /* -- HOME -- */
-  sr.reveal('.featured-text-card',{})
-  sr.reveal('.featured-name',{delay: 100})
-  sr.reveal('.featured-text-info',{delay: 200})
-  sr.reveal('.featured-text-btn',{delay: 200})
-  sr.reveal('.social_icons',{delay: 200})
-  sr.reveal('.featured-image',{delay: 300})
-  
-
-  /* -- PROJECT BOX -- */
-  sr.reveal('.project-box',{interval: 200})
-
-  /* -- HEADINGS -- */
-  sr.reveal('.top-header',{})
-
-/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
-
-  /* -- ABOUT INFO & CONTACT INFO -- */
-  const srLeft = ScrollReveal({
-    origin: 'left',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-  })
-  
-  srLeft.reveal('.about-info',{delay: 100})
-  srLeft.reveal('.contact-info',{delay: 100})
-
-  /* -- ABOUT SKILLS & FORM BOX -- */
-  const srRight = ScrollReveal({
-    origin: 'right',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-  })
-  
-  srRight.reveal('.skills-box',{delay: 100})
-  srRight.reveal('.form-control',{delay: 100})
-  
-
-
-/* ----- CHANGE ACTIVE LINK ----- */
-  
-  const sections = document.querySelectorAll('section[id]')
-
-  function scrollActive() {
-    const scrollY = window.scrollY;
-
-    sections.forEach(current =>{
-      const sectionHeight = current.offsetHeight,
-          sectionTop = current.offsetTop - 50,
-        sectionId = current.getAttribute('id')
-
-      if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
-
-          document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
-
-      }  else {
-
-        document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
-
-      }
-    })
-  }
-
-  window.addEventListener('scroll', scrollActive)
