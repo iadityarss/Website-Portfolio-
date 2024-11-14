@@ -12,10 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-function toggleDescription() {
-            const description = document.getElementById('arduino-description');
-            description.classList.toggle('hidden');
-        }
+
+    // Toggle description for Arduino Vehicle project
+    const arduinoProjectTitle = document.querySelector('.project h3');
+    const description = document.getElementById('arduino-description');
+
+    arduinoProjectTitle.addEventListener('click', () => {
+        description.classList.toggle('hidden');
+    });
+
     // Zoom in effect for certificates when clicked
     const certificates = document.querySelectorAll('.certificate img');
     certificates.forEach(certificate => {
