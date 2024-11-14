@@ -93,7 +93,31 @@ nav ul li a:hover {
     font-size: 0.9rem;
     color: #495867; /* Soft navy */
 }
+/* Styling for the details section */
+.details {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #E6EBE0;
+    border-radius: 10px;
+    background-color: #FFF7E3;
+    font-family: 'Arsenica', sans-serif;
+}
 
+button {
+    background-color: #FFD166;
+    color: #495867;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arsenica', sans-serif;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
 /* Achievements Section */
 .achievement-list {
     display: grid;
