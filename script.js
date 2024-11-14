@@ -20,7 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     arduinoProjectTitle.addEventListener('click', () => {
         description.classList.toggle('hidden');
     });
-
+function toggleDetails() {
+    const details = document.getElementById("more-details");
+    details.style.display = details.style.display === "none" ? "block" : "none";
+}
     // Zoom in effect for certificates when clicked
     const certificates = document.querySelectorAll('.certificate img');
     certificates.forEach(certificate => {
