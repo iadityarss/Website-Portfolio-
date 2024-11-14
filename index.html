@@ -11,8 +11,10 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">Aditya Rana</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -20,99 +22,68 @@
         </nav>
     </header>
 
-    <section id="project" class="section">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Aditya Rana</h1>
+            <p>Robotics Engineer & Full Stack Developer</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
                 <h3>Minimal Water Efficiency System</h3>
             </div>
-            <div class="project">
+            <div class="project-card">
                 <h3>Ultrasonic Arduino Radar System</h3>
             </div>
-           <div class="project">
-    <h2>Arduino-Powered Smart Parking Assistant</h2>
-    <p>Aiming to create an Arduino-powered smart parking assistant for vehicles, utilizing ultrasonic sensors and servos for precise parking, while incorporating a light-dependent resistor (LDR) for adaptive functionality in varying lighting conditions. This project aims to showcase the fusion of technology and affordability, providing an intelligent solution for modern vehicle navigation.</p>
-    <button onclick="toggleDetails()">Tap for more details</button>
-
-    <div id="more-details" class="details">
-        <h3>Upgrades include:</h3>
-        <ul>
-            <li>Battery add-on: A suitable battery of appropriate voltage can be added.</li>
-            <li>Solar Power: A small solar panel of suitable power generation can be added.</li>
-            <li>Rear Camera: A small rear camera can be added.</li>
-            <li>Visual Representation: On-screen representation can be made.</li>
-            <li>ABS Addition: Automatic braking system can be added.</li>
-        </ul>
-    </div>
-</div>
+            <div class="project-card">
+                <h3>Smart Parking Assistant</h3>
+                <p>A smart Arduino-powered parking system with ultrasonic sensors, LDR, and more.</p>
+            </div>
+        </div>
     </section>
 
     <section id="achievements" class="section">
-        <h2>Achievements</h2>
-        <div class="achievement-list">
-            <div class="achievement">
-                <h3>Gold Medals in International Olympiads</h3>
-                <p>From 2017 to 2021, I won consecutive gold medals in the International Olympiads.</p>
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <h3>International Olympiad Gold Medals</h3>
+                <p>Consecutive gold medals from 2017 to 2021.</p>
             </div>
-            <div class="achievement">
+            <div class="achievement-card">
                 <h3>State-level Cricket Certification</h3>
-                <p>Certified in cricket at the state level, showcasing leadership and teamwork skills.</p>
+                <p>Certified in cricket at the state level, demonstrating leadership skills.</p>
             </div>
-            <div class="achievement">
-                <h3>Topper in Physics, Chemistry, and Math</h3>
-                <p>Consistently ranked at top in Physics, Chemistry, and Math throughout my academic journey.</p>
-            </div>
-            <div class="achievement">
-                <h3>House Captain and Activity incharge</h3>
-                <p>House Captain in school student administration council and Activity incharge of class 12th.</p>
-            </div>
-            <div class="achievement">
-                <h3>Excellence in Sports</h3>
-                <p>Won gold and silver medals in Annual Sports Meet and led my house to Runner Up-1.</p>
+            <div class="achievement-card">
+                <h3>Topper in Science and Math</h3>
+                <p>Consistently ranked top in Physics, Chemistry, and Math.</p>
             </div>
         </div>
     </section>
 
     <section id="certificates" class="section">
-        <h2>My Certificates</h2>
-        <div class="certificate-list">
-            <div class="certificate">
-                <h3>NIIT Certificate of Excellence for Nguru Quiz Gold Medal</h3>
-                <img src="IMG_5068.jpeg" alt="NIIT Nguru Quiz Gold Medal" class="certificate-image">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <h3>Nguru Quiz Gold Medal</h3>
+                <img src="IMG_5068.jpeg" alt="Nguru Quiz" class="certificate-image">
             </div>
-            <div class="certificate">
-                <h3>International Model United Nation Excellence Certificate for Best Position Paper</h3>
-                <img src="IMG_5069.png" alt="SKGKO Gold and Silver Medals" class="certificate-image">
+            <div class="certificate-card">
+                <h3>Best Position Paper - IMUN</h3>
+                <img src="IMG_5069.png" alt="IMUN Best Position Paper" class="certificate-image">
             </div>
-            <div class="certificate">
-                <h3>International Olympiad of Science Excellence Certificate</h3>
-                <img src="IMG_5066.jpeg" alt="Basic Python Certification from IIT Bombay" class="certificate-image">
-            </div>
-            <div class="certificate">
-                <h3>Aerial Robotics Specialization from the University of Pennsylvania</h3>
-                <img src="IMG_5062.png" alt="Aerial Robotics Specialization" class="certificate-image">
-            </div>
-            <div class="certificate">
-                <h3>Appreciation certificate awarded by 'AMAR UJALA' for excellence in class 10th results</h3>
-                <img src="IMG_5075.png" alt="Appreciation certificate" class="certificate-image">
-            </div>
-            <div class="certificate">
-                <h3>International Olympiad of Science Level -2 Excellence Certificate</h3>
-                <img src="IMG_5067.png" alt="Level2" class="certificate-image">
-            </div>
-            <div class="certificate">
-                <h3>Certificate of Participation and Appreciation by GURU Study Centre for excellence in mock tests</h3>
-                <img src="IMG_5071.png" alt="GURU" class="certificate-image">
-            </div>
-            <div class="certificate">
-                <h3>Certificate of Appreciation by HIMCOSTE for excelling in HPCSC</h3>
-                <img src="E114FD46-9E17-4A9D-A824-1314746AB23D.jpeg" alt="HPCSC" class="certificate-image">
+            <div class="certificate-card">
+                <h3>Python Certification from IIT Bombay</h3>
+                <img src="IMG_5066.jpeg" alt="Python Certificate" class="certificate-image">
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
-        <h2>Contact Me</h2>
+        <h2 class="section-title">Get in Touch</h2>
         <form id="contact-form" action="mailto:iadityarss@icloud.com" method="post" enctype="text/plain">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
@@ -123,12 +94,12 @@
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Aditya Rana</p>
+        <p>&copy; 2024 Aditya Rana | All rights reserved.</p>
     </footer>
 </body>
 </html>
